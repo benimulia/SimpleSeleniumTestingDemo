@@ -16,9 +16,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class AppTest 
 {
-
     WebDriver driver;
-
 
     @Before
     public void initiate() {
