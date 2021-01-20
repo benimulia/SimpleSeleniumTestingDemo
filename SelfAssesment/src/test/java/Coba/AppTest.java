@@ -1,5 +1,6 @@
 package Coba;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +21,8 @@ public class AppTest
 
     @Before
     public void initiate() {
-        System.setProperty("webdriver.chrome.driver","C:\\BrowserDrivers\\chromedriver.exe");
+        //System.setProperty("webdriver.chrome.driver","C:\\BrowserDrivers\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         driver = new ChromeDriver();
@@ -30,8 +32,8 @@ public class AppTest
 
     @After
     public void end() {
-        driver.close();
         System.out.println("FINISH");
+        driver.close();
     }
 
     /**
