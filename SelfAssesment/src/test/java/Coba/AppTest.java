@@ -32,7 +32,7 @@ public class AppTest
 
     @After
     public void end() {
-        System.out.println("FINISH");
+        System.out.println("------------- FINISHED -------------");
         driver.close();
     }
 
@@ -66,7 +66,7 @@ public class AppTest
         driver.findElement(By.xpath("//span[text()='Berikutnya']")).click();
 
         //next page
-        
+
         driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[2]/span/div[3]/div/div/div[3]/div")).click();
         driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[4]/span/div[3]/div/div/div[3]/div")).click();
         driver.findElement(By.xpath("//*[@id=\"mG61Hd\"]/div[2]/div/div[2]/div[2]/div/div/div[2]/div/div[1]/div/div[6]/span/div[3]/div/div/div[3]/div")).click();
