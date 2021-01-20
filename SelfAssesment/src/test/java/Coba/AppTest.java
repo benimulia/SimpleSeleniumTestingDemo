@@ -31,6 +31,7 @@ public class AppTest
     @After
     public void end() {
         driver.close();
+        System.out.println("FINISH");
     }
 
     /**
@@ -87,5 +88,7 @@ public class AppTest
         driver.findElement(By.xpath("//span[text()='Berikutnya']")).click();
 
         driver.findElement(By.xpath("//span[text()='Kirim']")).click();
+
+
     }
 }
